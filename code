@@ -1,0 +1,29 @@
+weight_list=[]
+weight_list.append(float(input('Enter weight 1:\n')))
+weight_list.append(float(input('Enter weight 2:\n')))
+weight_list.append(float(input('Enter weight 3:\n')))
+weight_list.append(float(input('Enter weight 4:\n')))
+print('Weights:', weight_list)
+print()
+
+
+sum_weight = sum(weight_list)
+avg_weight = sum_weight / len(weight_list)
+sort_weight = sorted(weight_list, reverse=True)
+max_weight = sort_weight[0]
+print('Average weight: %0.2f' % avg_weight)
+
+
+print('Max weight: %0.2f' % max_weight)
+print()
+
+
+
+index_num = int(input('Enter a list index (1 - 4):\n')) - 1
+print('Weight in pounds: %0.2f' % weight_list[index_num])
+kilo_weight = weight_list[index_num]/2.2
+print('Weight in kilograms: %0.2f' % kilo_weight)
+print()
+
+
+print('Sorted list:',sorted(weight_list))
